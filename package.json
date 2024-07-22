@@ -1,0 +1,36 @@
+{
+  "name": "kitforge",
+  "version": "1.0.0",
+  "description": "Create a web application without having to worry about the setup.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist node_modules",
+    "typecheck": "tsc",
+    "start": "node dist/index.js --watch",
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.4",
+    "@clack/prompts": "^0.7.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "create-svelte": "^6.3.3",
+    "gradient-string": "^2.0.2",
+    "type-fest": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/gradient-string": "^1.1.5",
+    "@types/node": "^20.11.25",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  }
+}
